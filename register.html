@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Lionex Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Lionex Game</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Register Box -->
+  <div class="auth-container">
+    <h2>Create Account</h2>
+
+    <form action="/register" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm" placeholder="Confirm Password" required>
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p class="auth-note">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+
+</body>
+</html>

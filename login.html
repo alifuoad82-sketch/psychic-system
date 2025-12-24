@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Lionex Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Lionex Game</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- Login Box -->
+  <div class="auth-container">
+    <h2>Login</h2>
+
+    <form action="/login" method="post">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="auth-note">
+      Don’t have an account?
+      <a href="register.html">Create one</a>
+    </p>
+  </div>
+
+</body>
+</html>
+
+<a href="/auth/roblox" class="btn roblox">
+  Login with Roblox
+</a>

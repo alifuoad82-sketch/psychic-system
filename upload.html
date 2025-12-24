@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Game | Lionex Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Lionex Game</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Upload Box -->
+  <div class="upload-container">
+    <h2>Upload New Game</h2>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="text" name="game_name" placeholder="Game Name" required>
+
+      <select name="category" required>
+        <option value="">Select Category</option>
+        <option>Action</option>
+        <option>RPG</option>
+        <option>Adventure</option>
+        <option>Online</option>
+      </select>
+
+      <textarea name="description" placeholder="Game Description" required></textarea>
+
+      <label class="file-label">
+        Cover Image
+        <input type="file" name="cover" accept="image/*" required>
+      </label>
+
+      <label class="file-label">
+        Game File
+        <input type="file" name="game_file" required>
+      </label>
+
+      <button type="submit">Upload Game</button>
+    </form>
+  </div>
+
+</body>
+</html>
